@@ -1,0 +1,17 @@
+<div class="container show">
+  <div class="row col-6 mt-3 flex-column">
+    <h1><%= @task.title %></h1>
+    <div class="card">
+      <%= @task.details %>
+    </div>
+    <% if @task.completed %>
+      <span><i class="far fa-check-square"></i>This task is completed</span>
+    <% else %>
+      <span><i class="far fa-square"></i>This task is not comlpeted yet</span>
+    <% end %>
+    <%= render 'back' %>
+    <div class="edit_button">
+      <%= link_to 'Edit this task', edit_task_path(@task), class: 'btn btn-light' %>
+    </div>
+  </div>
+</div>

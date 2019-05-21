@@ -1,0 +1,61 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$light-grey: #F5F5F5;
+
+i {
+  margin-right: 1rem;
+}
+
+.back_button {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+
+  a:link {
+    text-decoration: none;
+  }
+}
+
+.edit_button {
+  position: absolute;
+  top: 0;
+  right: 0
+}
+
+.index {
+  li {
+    font-size: 1.5rem;
+    border: 0;
+    padding-left: 0;
+
+    i {
+      margin-right: 1rem;
+    }
+  }
+
+  .add {
+    border-top: 2px solid $light-grey;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    font-size: 1.25rem;
+
+    a:link {
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+.show {
+  .card {
+    padding: 1.75rem;
+    background-color: $light-grey;
+    border: 0;
+    margin-bottom: 1rem;
+  }
+
+  span {
+    margin-bottom: 1rem;
+  }
+}
